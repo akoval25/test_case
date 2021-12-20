@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="form">
+        <label class="form__lable" for="first">Введіть перше число</label>
+        <input class="form__input js-input__first" type="number" id="first" name="first" placeholder="Любе число" />
+
+        <label for="action">Вибери дію</label>
+        <select id="action" name="action">
+            <option data-action="plus">+</option>
+            <option data-action="minus">-</option>
+            <option data-action="multiplication">*</option>
+            <option data-action="division">/</option>
+        </select>
+
+        <label class="form__lable" for="second">Введіть друге число</label>
+        <input class="form__input js-input__second" type="number" id="second" name="second" placeholder="Любе число" />
+
+      <button class="form__btm" type="submit">Прорахувати</button>
+      <p class="js-result"></p>
+    </form>
+    
+    <script src="./calculator.js"></script>
+</body>
+</html>
