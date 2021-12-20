@@ -1,7 +1,55 @@
 .form {
-  width: 200px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+}
+
+.form__lable {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 5px 0 5px 3px;
+}
+
+.form__select {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 5px 0 5px 3px;
+}
+
+.form__btm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: blue;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-color: blue;
+  border-radius: 20px;
+  background-color: white;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__btm:hover,
+.form__btm:focus {
+  border-color: transparent;
+  background-color: blue;
+  color: white;
+}
+
+.js-result {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  text-align: center;
 }
